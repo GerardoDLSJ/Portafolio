@@ -1,0 +1,328 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/originals/77/ca/a3/77caa32884d735d439ade45ba37feaf2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Poppins';
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+
+.bold{
+    font-weight: 800;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+
+.contenedor{
+    background-color: transparent;
+    width: 90%;
+    margin: 4rem auto;
+}
+.contenedor__separador{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.separador__contenido{
+    background-color: transparent;
+    width: 80%;
+    padding: 0;
+
+}
+
+.separador__extras{
+    background-image: linear-gradient(to bottom, #ac17ac, #a023b2, #932cb7, #8534bc, #753ac0);
+    width: 25%;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    height: 10%;
+    max-height: 10%;
+    border-style: groove;
+}
+
+
+header{
+    margin: 0 0 .8rem 0;
+    background: linear-gradient(320deg, rgba(183,43,193,1) 28%, rgba(99,78,221,1) 77%);
+    border-style: groove;
+    border-radius: 1.2rem;
+    position: sticky;
+    
+}
+
+main{
+    margin-top: .1rem;
+    background-color: #095169;
+    border-radius: 1.2rem;
+    border-style: groove;
+}
+
+header nav div ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 3rem;
+    margin: 0;
+    position: sticky;
+}
+header nav{
+    position: sticky;
+}
+
+a{
+    text-decoration: none;
+}
+header nav div ul li a{
+    font-size: 1.2rem;
+    color: #fff;
+    
+}
+
+section{
+    width: 100%;
+    max-height: 50%;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile__img{
+    margin: 0rem;
+    padding: 0.7rem 0.7rem 0 0.7rem;
+    flex: 0 1 25%;
+    border-radius: 1.2rem 0 0 1.2rem;
+    background-image: linear-gradient(41deg, rgba(9,81,105,1) 19%, rgba(113,30,164,1) 95%);
+    box-shadow: 0px 2px 10px #032835;
+    border-right: dotted;
+}
+.profile__img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.iconos-tech{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2rem;
+    align-items: center;
+
+}
+
+.profile__description{
+    flex: 1 0 75%;
+    width: auto;
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+    background: linear-gradient(to right bottom, #690969, #630370, #5b0178, #500380, #400788);;
+    border-radius: 0rem 1.2rem 1.2rem 0;
+}
+
+.profile__description p{
+    margin-top: 0;
+}
+
+.profile__description p:nth-child(2){
+    font-weight: 600;
+}
+
+.profile__description p:nth-child(3){
+    margin: 1rem;
+    text-align: justify;
+    padding-left: 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-family: 'Open Sans';
+}
+
+.profile .profile__img span img{
+    width: 1.7rem;
+    border-radius: 0%;
+}
+
+
+
+/*Habilidades*/
+
+.section_skills{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    
+}
+
+.skills_header{
+    text-align: center;
+}
+
+.skills_list ul li{
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: justify;
+    
+}
+
+.skills_list ul li span{
+    font-weight: 800;
+
+}
+
+.section_experience{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.section_experience h2{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    background-color: #fff;
+    color: #030b36;
+    width: 32%;
+    flex-wrap: wrap;
+    padding: .5rem;
+    text-align: center;
+    margin: 1rem;
+    max-height: 10%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 9px #000;
+}
+
+.contenedor_img{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.contenedor_img img{
+    width: 100%;
+    border: 1px solid #374692;
+    border-radius: 19%;
+}
+.card div p{
+    font-family: 'Open Sans';
+    line-height: 1;
+}
+.card div ul li{
+    text-align: start;
+    font-size: 1rem;
+    line-height:1.4;
+    
+}
+
+.knowledge{
+    display: none;
+}
+
+.section_briefcase{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+.briefcase-proyects{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.section_briefcase .card div p{
+    line-height: 1.5;
+}
+
+
+
+.section_certificates{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.certificates-header{
+    text-align: center;
+}
+
+.certificates-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section_certificates .card div{
+    margin: 0 auto;
+}
+
+.section_certificates .certificates-cards .card div img{
+    border: none;
+}
+
+.section_certificates .certificates-cards .card{
+    height: 20rem;
+}
+
+.section_certificates .certificates-cards .card div img[src*="udemy"]{
+    margin-top: 2rem;
+    height: 10rem;
+    width: 100%;
+
+}
+
+
+.sections_aside{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;    
+}
+.sections_aside div h2{
+    font-size: 1.3rem;
+    margin-bottom: .5rem ;
+    margin-top: .2rem;
+}
+
+.sections_aside div ul{
+    margin-top:0;
+    list-style: none;
+    margin-bottom: 0.1rem;
+    padding-left:0;
+}
+
+.sections_aside div ul li{
+    margin-top: 0;
+    text-align: left;
+    font-size: .9rem;
+}
+
+.aside-educacion ul li{
+    margin-bottom: 0.9rem;
+}
+
+.no-mostrar{
+    display: none;
+}
