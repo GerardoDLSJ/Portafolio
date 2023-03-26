@@ -547,9 +547,9 @@ header{
     
 }
 
-@media screen and (max-width:351px) {
+@media screen and (max-width:380px) {
     header{
-        height: 12.5rem;
+        height: 10rem;
     }
     
 }
