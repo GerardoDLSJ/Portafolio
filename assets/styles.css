@@ -549,7 +549,7 @@ header{
 
 @media screen and (max-width:380px) {
     header{
-        height: 10rem;
+        height: 12.5rem;
     }
     
 }
