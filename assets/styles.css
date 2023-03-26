@@ -506,7 +506,6 @@ header{
 
 
     header{
-        height: 12.4rem;
         margin: 1rem 1rem;
         height: 8rem;
     }
@@ -545,5 +544,12 @@ header{
         width: 100%;
     }
     
+    
+}
+
+@media screen and (max-width:351px) {
+    header{
+        height: 12.5rem;
+    }
     
 }
