@@ -8,11 +8,15 @@ body{
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif,Arial, Helvetica;
 }
 
 h2{
     font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -45,7 +49,8 @@ h2{
 }
 
 .separador__extras{
-    background-image: linear-gradient(to bottom, #ac17ac, #a023b2, #932cb7, #8534bc, #753ac0);
+    background-color: #0a1744db;
+    backdrop-filter: blur(20px);
     width: 25%;
     border-radius: 1.2rem;
     padding: 1rem;
@@ -57,7 +62,8 @@ h2{
 
 header{
     margin: 0 0 .8rem 0;
-    background: linear-gradient(320deg, rgba(183,43,193,1) 28%, rgba(99,78,221,1) 77%);
+    background-color: #0a1744db;
+    backdrop-filter: blur(20px);
     border-style: groove;
     border-radius: 1.2rem;
     position: sticky;
@@ -66,33 +72,73 @@ header{
 
 main{
     margin-top: .1rem;
-    background-color: #095169;
+    background-color: rgba(37, 37, 168, 0.5);
+    backdrop-filter: blur(30px);
     border-radius: 1.2rem;
     border-style: groove;
 }
 
-header nav div ul{
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+  width: 70%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-redes{
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: end;
+  padding-right: 1.3rem;
+  gap: .6rem;
+}
+
+.menu-redes a i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.menu-redes a:nth-child(1) i:hover{
+    color: #3aa1f0;
+}
+
+.menu-redes a:nth-child(2) i:hover{
+    color: #7c06e3;
+}
+
+
+.lista-menu{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
     padding: 0;
     height: 3rem;
     margin: 0;
     position: sticky;
-}
-header nav{
-    position: sticky;
+    flex-wrap: wrap;
+    gap: .6rem;
+    padding-left: 1.3rem;
+    
 }
 
-a{
-    text-decoration: none;
-}
-header nav div ul li a{
-    font-size: 1.2rem;
+.lista-menu a{
+    font-size: 1rem;
     color: #fff;
     
 }
+
+.subrayado{
+    border-bottom: 2px solid #fff ;
+    font-weight: 700;
+}
+
 
 section{
     width: 100%;
@@ -108,9 +154,10 @@ section{
     padding: 0.7rem 0.7rem 0 0.7rem;
     flex: 0 1 25%;
     border-radius: 1.2rem 0 0 1.2rem;
-    background-image: linear-gradient(41deg, rgba(9,81,105,1) 19%, rgba(113,30,164,1) 95%);
+    background-color: rgba(28, 83, 54, 0.5);
+    backdrop-filter: blur(10px);
     box-shadow: 0px 2px 10px #032835;
-    border-right: dotted;
+    
 }
 .profile__img img{
     width: 100%;
@@ -129,12 +176,14 @@ section{
 .profile__description{
     flex: 1 0 75%;
     width: auto;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     display: flex;
     flex-direction: column;  
-    background: linear-gradient(to right bottom, #690969, #630370, #5b0178, #500380, #400788);;
+    background-color: rgba(162, 28, 228, 0.1);
+    backdrop-filter: blur(20px);
     border-radius: 0rem 1.2rem 1.2rem 0;
+    height: 100%;
 }
 
 .profile__description p{
@@ -151,8 +200,9 @@ section{
     padding-left: 0;
     font-size: 1.3rem;
     line-height: 1.5;
+    margin-bottom: .3rem;
     letter-spacing: 0.5px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif,Arial, Helvetica;
 }
 
 .profile .profile__img span img{
@@ -172,6 +222,12 @@ section{
 
 .skills_header{
     text-align: center;
+}
+.skills_list ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 90%;
 }
 
 .skills_list ul li{
@@ -211,7 +267,7 @@ section{
 }
 
 .card:hover{
-    box-shadow: 0px 0px 9px #000;
+    box-shadow: 0px 0px 9px #fff;
 }
 
 .contenedor_img{
@@ -219,13 +275,18 @@ section{
     width: 70%;
 }
 
+.contenedor_contenido{
+    margin: 0 auto;
+}
+
 .contenedor_img img{
-    width: 100%;
+    width: 90%;
     border: 1px solid #374692;
     border-radius: 19%;
+    margin-bottom: 0;
 }
 .card div p{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans',sans-serif,Arial, Helvetica;
     line-height: 1;
 }
 .card div ul li{
@@ -282,14 +343,26 @@ section{
 }
 
 .section_certificates .certificates-cards .card{
-    height: 20rem;
+    height: 18rem;
 }
 
 .section_certificates .certificates-cards .card div img[src*="udemy"]{
     margin-top: 2rem;
-    height: 10rem;
+    height: 9rem;
     width: 100%;
 
+}
+
+.boton{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 1.2rem ;
+    font-weight: 600;
+}
+
+.boton:hover{
+    color: #fcf838;
 }
 
 
@@ -298,6 +371,7 @@ section{
     display: flex;
     flex-direction: column;
     padding: 0rem;    
+    flex-wrap: wrap;
 }
 .sections_aside div h2{
     font-size: 1.3rem;
@@ -313,9 +387,10 @@ section{
 }
 
 .sections_aside div ul li{
-    margin-top: 0;
+    margin: 0.3rem 0 0.4rem 0;
     text-align: left;
-    font-size: .9rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .aside-educacion ul li{
