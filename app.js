@@ -11,11 +11,11 @@ const secciones = document.querySelectorAll('main section');
 // Ocultar y mostrar secciones
 let elementoSeleccionado ='';
 
-const perfil = document.querySelector('.section_profile');
-const habilidades = document.querySelector('.section_skills');
-const experiencia = document.querySelector('.section_experience');
-const portafolio = document.querySelector('.section_briefcase');
-const certificacion = document.querySelector('.section_certificates');
+const perfil = document.querySelector('.section-profile');
+const habilidades = document.querySelector('.section-skills');
+const experiencia = document.querySelector('.section-experience');
+const portafolio = document.querySelector('.section-briefcase');
+const certificacion = document.querySelector('.section-certificates');
 
 let map = new Map();
 
