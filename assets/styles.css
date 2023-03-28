@@ -1,15 +1,50 @@
+/*=====Imports=======*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /*======Globales=======*/
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(https://i.pinimg.com/originals/77/ca/a3/77caa32884d735d439ade45ba37feaf2.gif);
+    background-image: url('https://64.media.tumblr.com/f52cb9dd756ad035cb2fd3500a7c0ada/tumblr_pofnbiG9ne1xcy6bso1_1280.gifv');
+    /* url(https://i.pinimg.com/originals/77/ca/a3/77caa32884d735d439ade45ba37feaf2.gif) */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
     font-family: 'Poppins',sans-serif,Arial, Helvetica;
+    overflow-y: hidden;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+   /* Estilos barra (thumb) de scroll */
+::-webkit-scrollbar-thumb {
+    background: #4d63f0;
+    border-radius: 4px;
+  }
+  
+::-webkit-scrollbar-thumb:active {
+    background-color: #207ef2;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #3108c4;
+    box-shadow: 0 0 2px 1px rgba(83, 8, 233, 0.2);
+  }
+  
+   /* Estilos track de scroll */
+::-webkit-scrollbar-track {
+    background: #dddcdf;
+    border-radius: 4px;
+  }
+  
+::-webkit-scrollbar-track:hover, 
+::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+  }
+  
 
 h2{
     font-size: 1.8rem;
@@ -47,11 +82,24 @@ a{
     color: #fcf838;
 }
 
+.astronauta{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+}
+
+.astronauta2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 90%;
+    bottom: 2px;
+}
 
 .contenedor{
     background-color: transparent;
     width: 90%;
-    margin: 4rem auto;
+    margin: 2rem auto;
 }
 .contenedor-separador{
     width: 100%;
@@ -62,44 +110,52 @@ a{
 
 .separador-contenido{
     background-color: transparent;
-    width: 80%;
+    width: 75%;
     padding: 0;
-
+    margin-left: 30%;
+    height: 415vh;
+   
 }
 
 .separador-extras{
-    background-color: #0a1744db;
-    backdrop-filter: blur(20px);
-    width: 25%;
+    background-color: #0a1744;
     border-radius: 1.2rem;
     padding: 1rem;
-    height: 10%;
-    max-height: 10%;
+    width: 20%;
     border-style: groove;
+    position: fixed;
+    left: 5%;
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     margin-top: .1rem;
-    background-color: rgba(37, 37, 168, 0.5);
-    backdrop-filter: blur(30px);
+    background-color: rgba(37, 37, 168);
     border-radius: 1.2rem;
     border-style: groove;
+    height: 75%;
+    overflow-y: scroll;
+    width: 63%;
+    position: fixed;
 }
 
 section{
-    width: 100%;
+    width: 90%;
     max-height: 50%;
+    margin: 10rem auto;
 }
+
+
+
 
 /*======Barra de navegación======*/
 
 header{
-    margin: 0 0 .8rem 0;
+    margin: 1rem 4.5%;
     background-color: #0a1744db;
-    backdrop-filter: blur(20px);
     border-style: groove;
     border-radius: 1.2rem;    
-    max-height: 30rem;
 
 }
 
@@ -164,66 +220,48 @@ header{
 
 /*======Secciones======*/
 
+/*====== Acerca de mí ======*/
 
-/*======Seccion - Acerca de mí======*/
+.section-inicio h1{
+    margin-top: 0;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.section-inicio img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+
+}
+
+/*======Sección - Acerca de mí======*/
 .profile{
     display: flex;
-}
-
-.profile-img{
-    margin: 0rem;
-    padding: 0.7rem 0.7rem 0 0.7rem;
-    flex: 0 1 25%;
-    border-radius: 1.2rem 0 0 1.2rem;
-    background-color: rgba(28, 83, 54, 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 2px 10px #032835;
-    
-}
-.profile-img img{
-    width: 100%;
-    border-radius: 50%;
-}
-
-.iconos-tech{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.2rem;
-    align-items: center;
-
+    flex-direction: column;
 }
 
 .profile-description{
     flex: 1 0 75%;
     width: auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;  
-    background-color: rgba(162, 28, 228, 0.1);
-    backdrop-filter: blur(20px);
     border-radius: 0rem 1.2rem 1.2rem 0;
     height: 100%;
 }
 
 .profile-description p{
     margin-top: 0;
-}
-
-.profile-description p:nth-child(2){
-    font-weight: 600;
-}
-
-.profile-description p:nth-child(3){
-    margin: 1rem;
     text-align: justify;
     padding-left: 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: .3rem;
     letter-spacing: 0.5px;
-    font-family: 'Open Sans', sans-serif,Arial, Helvetica;
+    font-family: 'Monserrat', sans-serif,Arial, Helvetica;
 }
 
 .profile .profile-img span img{
@@ -231,42 +269,66 @@ header{
     border-radius: 0%;
 }
 
+.informacion-general{
+    display: flex;
+
+}
+
+.informacion{
+    width: 100%;
+    margin: 0.5rem 0;
+    text-align: center;
+}
 
 /*======Seccion - Habilidades======*/
 .section-skills{
+    margin-top: 7rem;
     display: flex;
-    padding: 1rem;
     flex-direction: column;
     
 }
 
 .skills-header{
+    margin-top: 0;
     text-align: center;
 }
-.skills-list ul{
+.skills-list{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 90%;
 }
 
-.skills-list ul li{
-    font-size: 1.2rem;
-    line-height: 2;
-    letter-spacing: 1px;
-    text-align: justify;
+.list{
+    display: flex;
+    width: 100%;
+    margin: 0 1rem;
+    flex-direction: column;
+}
+
+
+.list h3{
+    text-align: center;
+    
     
 }
 
-.skills-list ul li span{
-    font-weight: 800;
-
+.list span{
+    display: inline;
+    margin-top: .5rem;
 }
 
+.skill{
+    background-color: #fcf838;
+    color: #0b0606;
+    line-height: 20px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/*=======Sección de experiencia========*/
+
 .section-experience{
+    margin-top: 13rem;
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
+  
 }
 .section-experience h2{
     text-align: center;
@@ -281,7 +343,6 @@ header{
     padding: .5rem;
     text-align: center;
     margin: 1rem;
-    max-height: 10%;
     border-radius: 10px;
     font-size: 1.1rem;
 }
@@ -322,7 +383,7 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 1rem;
+    margin-top: 18rem;
 }
 .briefcase-proyects{
     display: flex;
@@ -338,8 +399,8 @@ header{
 
 .section-certificates{
     display: flex;
-    padding: 1rem;
     flex-direction: column;
+    margin-top: 18rem;
 }
 
 .certificates-header{
@@ -373,6 +434,41 @@ header{
 
 /*======Sección - Aside ======*/
 
+.profile-img{
+    margin: 0rem;
+    border-radius: 1.2rem 1.2rem 0 0;    
+}
+
+.separador-extras p{
+    text-align: center;
+
+}
+
+.profile-img img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.iconos-tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.iconos-tech span{
+    margin: .2rem .5rem 0 0;
+}
+
+.iconos-tech span img{
+    border-radius: 0;
+    width: 2rem;
+}
+
 .sections-aside{
     text-align: center;
     display: flex;
@@ -405,10 +501,6 @@ header{
     margin-bottom: 0.9rem;
 }
 
-
-.no-mostrar{
-    display: none;
-}
 /*Media queries*/
 
 @media screen and (min-width: 1000px) and (max-width: 1024px){
@@ -498,12 +590,15 @@ header{
     .contenedor{
         width: 100%;
         margin: 0;
+        flex-direction: column-reverse;
     }
-
     .separador-contenido{
         width: 100%;
     }
 
+    .separador-extras{
+        position: inherit;
+    }
 
     header{
         margin: 1rem 1rem;
