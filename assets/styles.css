@@ -114,7 +114,7 @@ a{
     padding: 0;
     margin-left: 30%;
     height: 415vh;
-   
+    scroll-behavior: smooth;
 }
 
 .separador-extras{
@@ -138,6 +138,7 @@ main{
     overflow-y: scroll;
     width: 63%;
     position: fixed;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -161,7 +162,7 @@ header{
 
 .navegacion{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .menu{
@@ -205,7 +206,7 @@ header{
     height: 3rem;
     margin: 0;
     flex-wrap: wrap;
-    gap: .8rem;
+    gap: 1rem;
     padding-left: 1.3rem;
     max-height: 30rem;
     
@@ -215,6 +216,10 @@ header{
     font-size: 1rem;
     color: #fff;
     
+}
+
+.lista-menu a:hover{
+    color: #f5f53b;
 }
 
 
@@ -274,11 +279,27 @@ header{
 
 }
 
+.informacion-general div{
+    text-align: center;
+    border: 2px solid #f6ff51;
+    margin-left: 6px;
+}
+
+.informacion-general div:nth-child(1){
+    background-color: #207ef2;
+}
+.informacion-general div:nth-child(2){
+    background-color: #294ed4;
+}
+.informacion-general div:nth-child(3){
+    background-color: #6d22c9;
+}
+
 .informacion{
     width: 100%;
     margin: 0.5rem 0;
-    text-align: center;
 }
+
 
 /*======Seccion - Habilidades======*/
 .section-skills{
@@ -447,7 +468,7 @@ header{
 .profile-img img{
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 75%;
     border-radius: 50%;
 }
 
@@ -469,59 +490,50 @@ header{
     width: 2rem;
 }
 
-.sections-aside{
+.separador-extras h2{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0rem;    
-    flex-wrap: wrap;
-    
-}
-.sections-aside div h2{
-    font-size: 1.3rem;
-    margin-bottom: .5rem ;
-    margin-top: .2rem;
+    font-size: 2rem;
 }
 
-.sections-aside div ul{
-    margin-top:0;
-    list-style: none;
-    margin-bottom: 0.1rem;
-    padding-left:0;
-}
-
-.sections-aside div ul li{
-    margin: 0.3rem 0 0.4rem 0;
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.aside-educacion ul li{
-    margin-bottom: 0.9rem;
+.separador-extras p{
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 /*Media queries*/
 
-@media screen and (min-width: 1000px) and (max-width: 1024px){
-    header{
-        height: 4.4rem;
-    }
-}
 
-@media screen and (max-width: 820px) {
+
+@media screen and (max-width: 1100px) {
+    body{
+        overflow-y: auto;
+    }
     .contenedor-separador{
+       position: inherit;
        flex-direction: column ;
        align-items: center;
     }
 
     .separador-extras{
+        position: initial;
         width: 70%;
       
     }
+
+    .separador-contenido{
+        margin: 0 auto;
+    }
+
+    main{
+        position: inherit;
+        margin: 0 10%;
+        width: 100%;
+    }
+
     .menu{
         padding: 1rem;
         height: 4rem;
+        position: inherit;
     }
 
     .menu-redes{
