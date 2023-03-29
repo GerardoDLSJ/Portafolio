@@ -25,10 +25,6 @@ body{
     border-radius: 4px;
   }
   
-::-webkit-scrollbar-thumb:active {
-    background-color: #207ef2;
-  }
-  
 ::-webkit-scrollbar-thumb:hover {
     background: #3108c4;
     box-shadow: 0 0 2px 1px rgba(83, 8, 233, 0.2);
@@ -48,6 +44,8 @@ body{
 
 h2{
     font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 a{
@@ -61,6 +59,11 @@ a{
 
 .cursiva{
     font-style: italic;
+}
+
+.centrar{
+    margin: 0 auto;
+    
 }
 
 .subrayado{
@@ -227,6 +230,10 @@ header{
 
 /*====== Acerca de mí ======*/
 
+.section-inicio{
+    margin-top: 5rem;
+}
+
 .section-inicio h1{
     margin-top: 0;
     text-align: center;
@@ -236,7 +243,7 @@ header{
 
 .section-inicio img{
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 200px;
 
 }
@@ -276,6 +283,7 @@ header{
 
 .informacion-general{
     display: flex;
+    gap: 1rem;
 
 }
 
@@ -283,6 +291,7 @@ header{
     text-align: center;
     border: 2px solid #f6ff51;
     margin-left: 6px;
+    border-radius: 1.2rem;
 }
 
 .informacion-general div:nth-child(1){
@@ -298,6 +307,11 @@ header{
 .informacion{
     width: 100%;
     margin: 0.5rem 0;
+}
+
+.informacion ul li{
+    text-align: left;
+   
 }
 
 
@@ -347,46 +361,49 @@ header{
 /*=======Sección de experiencia========*/
 
 .section-experience{
-    margin-top: 13rem;
+    margin-top: 16rem;
     display: flex;
-  
+    flex-direction: column;
+    align-items: center;
+    
 }
 .section-experience h2{
     text-align: center;
 }
 
-.card{
+.experiencia-contenedor{
     display: flex;
-    background-color: #fff;
-    color: #030b36;
-    width: 32%;
-    flex-wrap: wrap;
-    padding: .5rem;
-    text-align: center;
-    margin: 1rem;
-    border-radius: 10px;
-    font-size: 1.1rem;
+    background-color: #e15d5d;
+    border-radius: 1.2rem;
+    max-width: 75%;
 }
 
-.card:hover{
-    box-shadow: 0px 0px 9px #fff;
+.experiencia-contenedor img{
+    width: 250px;
+    height: 250px;
+    margin: 2rem 1rem;
 }
+
 
 .contenedor-img{
+    padding: 2rem 1rem;
     margin: 0 auto;
-    width: 70%;
+    width: 40%;
 }
 
 .contenedor-contenido{
-    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
 }
 
 .contenedor-img img{
-    width: 90%;
+    width: 200px;
     border: 1px solid #374692;
-    border-radius: 19%;
+    border-radius: 1.2rem;
     margin-bottom: 0;
 }
+
+
 .card div p{
     font-family: 'Open Sans',sans-serif,Arial, Helvetica;
     line-height: 1;
@@ -394,7 +411,7 @@ header{
 .card div ul li{
     text-align: start;
     font-size: 1rem;
-    line-height:1.4;
+    line-height:1.2;
     
 }
 
@@ -404,24 +421,43 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 18rem;
+    margin-top: 16rem;
 }
 .briefcase-proyects{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin: 0 auto;
 }
 
 .section-briefcase .card div p{
-    line-height: 1.5;
+    line-height: 1.2;
 }
+
+.proyecto{
+    margin: .5rem 0;
+    display: flex;
+    background-color: #e2f01f;
+    color: #000000;
+    text-align: left;
+    border-radius: 1.2rem;
+}
+.contenedor-descripcion{
+    padding: 1rem;
+    width: 80%;
+}
+
+.contenedor-descripcion h3{
+    text-align: center;
+}
+
 
 /*======Sección - Certificados======*/
 
 .section-certificates{
     display: flex;
     flex-direction: column;
-    margin-top: 18rem;
+    margin-top: 16rem;
+    padding-top: 10rem;
 }
 
 .certificates-header{
@@ -430,28 +466,42 @@ header{
 
 .certificates-cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    gap: 1rem;
 
+}
 .section-certificates .card div{
     margin: 0 auto;
 }
 
-.section-certificates .certificates-cards .card div img{
-    border: none;
-}
-
-.section-certificates .certificates-cards .card{
-    height: 18rem;
-}
-
-.section-certificates .certificates-cards .card div img[src*="udemy"]{
-    margin-top: 2rem;
-    height: 9rem;
+.card{
+    display: flex;
+    background-color: #dbe45f;
+    color: #030b36;
     width: 100%;
+    height: 12.2rem;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    flex-direction: column;
+}
+
+.card div img{
+    border: none;
+    width: 50%;
+}
+
+.card:hover{
+    transform: scale(1.1);
 
 }
+
+.imagen-curso{
+    width: 120px;
+    height: 120px;
+  
+}
+
 
 /*======Sección - Aside ======*/
 
@@ -492,12 +542,12 @@ header{
 
 .separador-extras h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .separador-extras p{
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /*Media queries*/

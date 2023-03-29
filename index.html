@@ -63,11 +63,17 @@
                                     <div class="informacion">
                                         <h3>Idiomas</h3>
                                         <span>Inglés: Nivel B1</span>
-                                    </div>
-                                    <div class="informacion">
                                         <h3>Residencia</h3>
                                         <p>México</p>
                                         <span>San Pedro, Coahuila</span>
+                                    </div>
+                                    <div class="informacion">
+                                        <h3>Hobbies</h3>
+                                        <ul>
+                                            <li>Aprender cosas nuevas.</li>
+                                            <li>Jugar videojuegos.</li>
+                                            <li>Escuchar musica.</li>
+                                        </ul>
                                     </div>
                                     <div class="informacion">
                                         <h3>Educación</h3>
@@ -82,9 +88,7 @@
 
                         <!--Seccion Habilidades-->
                         <section id="habilidades" class="section-skills no-mostrar">
-                            <div class="skills-header">
                                 <h2>🗣Habilidades🛠</h2>
-                            </div>
                             <div class="skills-list">
                                 <div class="list list-lenguanges">
                                     <h3>Lenguajes</h3>
@@ -95,11 +99,11 @@
                                     <span class="skill">C#</span>
                                     <span class="skill">SQL</span>
                                 </div>
-                                <div class="list list-frameworks">
+                                <!-- <div class="list list-frameworks">
                                     <h3>Frameworks</h3>
                                     <span class="skill">Tailwind</span>
                                     <span class="skill">React</span>
-                                </div>
+                                </div> -->
                                 <div class="list list-tools">
                                     <h3>Herramientas</h3>
                                     <span class="skill">Git</span>
@@ -127,12 +131,9 @@
 
                         <!--Seccion Experiencia-->
                         <section id="experiencia" class="section-experience no-mostrar">
-                            <div class="experience-content">
-                                <h2 class="experience-title">🧱Experiencia🧱</h2>
-                                <div class="card"> 
-                                    <div class="contenedor-img">
-                                        <img src="/images/registro-civil-11.jpg" alt="registro civil 11"/>
-                                    </div>
+                            <h2 class="experience-title">🧱Experiencia🧱</h2>
+                                <div class="experiencia-contenedor"> 
+                                    <img src="/images/registro-civil-11.jpg" alt="registro civil 11" />                                   
                                     <div class="contenedor-contenido">
                                             <p class="cursiva">2022/09 - 2023/03</p>
                                             <p>Oficialia del Registro Civil 11</p>
@@ -145,36 +146,38 @@
                                                 <li>Mantenimiento a computadoras.</li>
                                             </ul>
                                     </div>    
-                                </div>
                             </div>
                         </section>
 
 
                         <!--Seccion Portafolio-->
-                        <section id="portafolio" class="section-briefcase no-mostrar">
+                        <section id="portafolio" class="section-briefcase">
                             <h2>📂Portafolio📂</h2>
                             <div class="briefcase-proyects">
-                                <div class="card">
+                                <div class="proyecto">
+                                    <div class="contenedor-descripcion">
+                                        <h3>App de Emergencia.</h3>
+                                        <ul>
+                                            <li><p>Lenguajes: Java.</p></li>
+                                            <li><p>Plataforma: Android.</p></li>
+                                            <li><p>Aplicación creada con el fin de atender llamados de emergencia a través de la tecnología Google Maps y GPS.</p></li>
+                                        </ul>
+                                    </div>                                    
                                     <div class="contenedor-img">
                                         <img src="./images/AppEmergency.png" alt="proyecto AppEmergency">
                                     </div>
-                                    <div>
-                                        <h3>App de Emergencia.</h3>
-                                        <p>Lenguajes: Java.</p>
-                                        <p>Plataforma: Android.</p>
-                                        <p>Aplicación creada con el fin de atender llamados de emergencia a través de la tecnología Google Maps y GPS.</p>
-                                    </div>
-                                    
                                 </div>
-                                <div class="card">
-                                    <div class="contenedor-img">
-                                        <img src="./images/redimensionar.png" alt="proyecto-redimensionar">
-                                    </div>
-                                    <div>
+                                <div class="proyecto">
+                                    <div class="contenedor-descripcion">
                                         <h3>Transformador de imagenes.</h3>
-                                        <p>Lenguajes: C#.</p>
-                                        <p>Plataforma: Windows.</p>
-                                        <p>Programa que redimensiona imagenes y cambia el formato.</p>
+                                        <ul>
+                                            <li><p>Lenguajes: C#.</p></li>
+                                            <li><p>Plataforma: Windows.</p></li>
+                                            <li><p>Programa que redimensiona imagenes y cambia el formato de la misma imagen.</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="contenedor-img">
+                                        <img class="centrar" src="./images/redimensionar.png" alt="proyecto-redimensionar">
                                     </div>
                                 </div>
                             </div>
@@ -188,8 +191,10 @@
                             </div>
                             <div class="certificates-cards">
                                 <div class="card">
-                                    <div class="contenedor-img">
-                                        <img class="imagen-curso" src="https://www.argoshub.com/wp-content/uploads/2020/07/e9af7174c6c1f54e22a192320be2184d.png" alt="proyecto-redimensionar">
+                                    <div>
+                                        <a href="https://drive.google.com/file/d/10ay3PX0wEAXhO99PtoWUv-kmTdLS0Qwr/view">
+                                            <img  class="imagen-curso" src="https://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png" alt="proyecto-redimensionar">
+                                        </a>
                                     </div>
                                     <div>
                                         <p>Introducción al Desarrollo Web.</p>
@@ -197,8 +202,10 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="contenedor-img">
-                                        <img src="https://s.udemycdn.com/meta/default-meta-image-v2.png" alt="udemy-logo">
+                                    <div>
+                                        <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-abffd4f7-eae0-4b4d-bcb5-ccba9f4b6fe1.pdf">
+                                            <img class="imagen-curso" src="https://lever-client-logos.s3.us-west-2.amazonaws.com/78ab6997-5350-444c-b150-02893b1abca5-1626277629079.png" alt="udemy-logo">
+                                        </a>
                                     </div>
                                     <div>
                                         <p>Git para desarrolladores.</p>
@@ -206,8 +213,10 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="contenedor-img">
-                                        <img src="https://s.udemycdn.com/meta/default-meta-image-v2.png" alt="udemy-logo">
+                                    <div>
+                                        <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-49961275-fd82-48b6-be0d-a49d23842e38.pdf">
+                                            <img  class="imagen-curso" src="https://lever-client-logos.s3.us-west-2.amazonaws.com/78ab6997-5350-444c-b150-02893b1abca5-1626277629079.png" alt="udemy-logo"> 
+                                        </a>
                                     </div>
                                     <div>
                                         <p>CSS de cero a experto.</p>
